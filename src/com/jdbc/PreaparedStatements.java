@@ -1,3 +1,4 @@
+
 package com.jdbc;
 
 import java.sql.Connection;
@@ -12,7 +13,7 @@ public class PreaparedStatements {
 
         final String URL = "jdbc:mysql://localhost:3306/mydata97r";
         String username = "root";
-        String password = "Anithasivalasetty@2005";
+        String password = "your_password";
 
         String query = "INSERT INTO student VALUES (?, ?, ?, ?)";
 
@@ -35,7 +36,8 @@ public class PreaparedStatements {
 
             System.out.println("Enter age:");
             int age = Integer.parseInt(sc.nextLine());
-            
+
+            // Correct parameter mapping
             ps.setInt(1, id);
             ps.setString(2, name);
             ps.setInt(3, marks);
