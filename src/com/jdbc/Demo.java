@@ -14,7 +14,7 @@ public class Demo {
 		String password ="Anithasivalasetty@2005";
 		String query = "insert into student values(103,'Anusha',80,21)";
 		//String query = "update student set age = 18 where id = 101";
-		//String query = "delete from student where id = 102";
+		//String query = "delete from student where id = 104";
 		//stage 1
 		try {
 		Connection connection=	DriverManager.getConnection(URL,username,password);
